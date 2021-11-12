@@ -1,0 +1,16 @@
+
+            <!--Postagens-->
+            <section id="post">
+                <h1 id="topo_post">Postagens</h1>
+                {% for postagem in postagens %}
+                    <article>
+                        <!--Titulo-->
+                        <header>
+                            <h1 id="titulo_post"><a href="#">{{postagem.titulo}}</a></h1>
+                        </header>
+                        <!--Conteudo-->
+                        <p>{{postagem.conteudo}}</p>
+                    </article>
+                {% endfor %}
+            </section>
+            
